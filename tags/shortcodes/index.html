@@ -27,6 +27,7 @@ that leave a lasting legacy for your brand.">
 
 
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
     
     
   <meta name="twitter:card" content="summary_large_image">
@@ -62,9 +63,9 @@ that leave a lasting legacy for your brand.">
   <header >
     <h2>all articles</h2>
     
-	</header>
-		
-			<section class="wrapper style5">
+  </header>
+  
+    <section class="wrapper style5">
 	<div class="inner">
     <h2><a href="https://thefamilyghosts.com/posts/rich-content/">Rich Content</a></h2>
     <time class="icon fa-clock-o">10.03.2019 00:00</time>
@@ -75,8 +76,8 @@ that leave a lasting legacy for your brand.">
 	</div>
 </section>
 
-		
-    <div class="wrapper style5">
+  
+  <div class="wrapper style5">
   <div class="inner align-center">
 
 1
@@ -123,8 +124,34 @@ that leave a lasting legacy for your brand.">
 
 <script src="/js/bundle.min.935254271ae3006602cb92b38ba70062a462cefc8d3aa575338369d256bb8422a69fc18f64450e74b7e6c240b20a252f522f3b9f323294bdf9ed466f5fb28ee9.js" integrity=""></script>
 
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"></script>
+<script>
+window.addEventListener('load', function() {
+  window.cookieconsent.initialise({
+    palette: {
+      popup: { background: "#000" },
+      button: { background: "#f1d600", text: "#000" }
+    },
+    theme: "classic",
+    position: "bottom",
+    content: {
+      message: "This site uses cookies to ensure you get the best experience on our website.",
+      dismiss: "Got it!",
+      link: "Learn more",
+      href: "/privacy-policy"
+    }
+  });
+});
+</script>
 
-			<img src="https://mautic.thefamilyghosts.com/mtracking.gif" alt="">
+
+<script>
+	var mauticTracking = document.createElement('img');
+	mauticTracking.src = 'https://mautic.thefamilyghosts.com/mtracking.gif?page_url=' + encodeURIComponent(window.location.href) + '&site=site1';
+	document.body.appendChild(mauticTracking);
+</script>
+
+
 	</body>
 </html>
 
